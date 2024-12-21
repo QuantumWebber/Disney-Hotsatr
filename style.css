@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.sidebar{
+    width: 6%;
+    height: 100vh;
+    background-color: #16181f;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 250px;
+    position: fixed;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;    
+}
+
+
+.nav-icons span{
+    color: white;
+    margin: 15px;
+}
+
+.nav-icons{
+    position: relative;
+   padding-left: 20px;
+}
+
+.nav-icons span:hover{
+    background-color: rgb(138, 34, 34);
+}
+
+.nav-icons li{
+    list-style: none;
+}
+
+.nav-icons img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+.banner{
+    width: 94%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    margin-left: 6%; /*to avoid overlapping of sidebar*/
+}
+
+.main{
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.banner img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.banner-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #16181f 16%,transparent, transparent); /* Gradient to blend with sidebar */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; /* Ensures overlay is on top of the image */
+}
+
+
+.banner-text {
+    position: absolute; /* Position it over the image */
+    top: 30%; /* Adjust vertically */
+    left: 5%; /* Adjust horizontally */
+    color: white; /* Text color */
+    z-index: 2; /* Ensures text stays above the image and overlay */
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 400px; /* Restricts text width */
+}
+
+.banner-text button {
+    padding: 10px 20px;
+    background-color: #1f80e0; 
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner-text button:hover {
+    background-color: #136cb6; 
+}
+
+.latest-movies{
+    background-color: #16181f;
+    color: white;
+}
+
+.movie-section{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+
+}
+
+
+.movie-section img {
+    width: 200px; 
+    height: auto;
+    border-radius: 10px; 
+        transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.movie-section img:hover {
+    transform: scale(1.1); /* Enlarge image slightly on hover */
+    cursor: pointer;
+}
+
+.channels{
+    background-color: #16181f;
+    color: white;
+}
+
+.list{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.list img{
+    width: 200px; 
+    height: auto;
+    border-radius: 10px; 
+        transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.list img:hover{
+    transform: scale(1.1); /* Enlarge image slightly on hover */
+    cursor: pointer;
+}
+
+.channels h1{
+    margin-left: 100px;
+}
+
+.latest-movies h1{
+    margin-left: 100px;
+}
